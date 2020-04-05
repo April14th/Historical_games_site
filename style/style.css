@@ -35,11 +35,11 @@ header {
 .header_up .header_up_wrapper {
   width: 970px;
   margin: 0 auto;
+  display: flex;
 }
 .header_up .header_up_wrapper .logo {
   margin: 16.5px 0;
   display: inline-block;
-  width: 18%;
 }
 .header_up .header_up_wrapper .logo .logo_link {
   text-decoration: none;
@@ -68,6 +68,27 @@ header {
   width: 100%;
   height: 16px;
   line-height: 16px;
+}
+.header_up .header_up_wrapper .contacts {
+  margin: 27.5px 0;
+  display: inline-block;
+}
+.header_up .header_up_wrapper .contacts .contacts_img {
+  float: right;
+  margin-right: 15px;
+}
+.header_up .header_up_wrapper .contacts .contacts_p {
+  font-family: 'Roboto';
+  font-size: 17px;
+  letter-spacing: 0.17px;
+  color: #ffffff;
+  float: right;
+  line-height: 28px;
+  margin-right: 20px;
+}
+.logo,
+.contacts {
+  width: 242.5px;
 }
 .header_down {
   height: 100%;
