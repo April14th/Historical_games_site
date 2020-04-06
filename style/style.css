@@ -6,6 +6,7 @@ html {
   height: 100%;
 }
 body {
+  font-family: 'Roboto Condensed';
   height: 100%;
 }
 .container {
@@ -40,6 +41,7 @@ header {
 .header_up .header_up_wrapper .logo {
   margin: 16.5px 0;
   display: inline-block;
+  width: 18%;
 }
 .header_up .header_up_wrapper .logo .logo_link {
   text-decoration: none;
@@ -72,23 +74,69 @@ header {
 .header_up .header_up_wrapper .contacts {
   margin: 27.5px 0;
   display: inline-block;
+  width: 30%;
 }
 .header_up .header_up_wrapper .contacts .contacts_img {
   float: right;
   margin-right: 15px;
 }
 .header_up .header_up_wrapper .contacts .contacts_p {
-  font-family: 'Roboto';
   font-size: 17px;
   letter-spacing: 0.17px;
   color: #ffffff;
   float: right;
   line-height: 28px;
-  margin-right: 20px;
 }
-.logo,
-.contacts {
-  width: 242.5px;
+.header_up .header_up_wrapper .email {
+  margin: 27.5px 0;
+  display: inline-block;
+  width: 22%;
+}
+.header_up .header_up_wrapper .email .email_p {
+  font-size: 17px;
+  letter-spacing: 0.17px;
+  color: #ffffff;
+  float: right;
+  line-height: 28px;
+}
+.header_up .header_up_wrapper .email .email_img {
+  float: right;
+  margin-right: 15px;
+  margin-top: 4px;
+}
+.header_up .header_up_wrapper .input_wrapper {
+  width: 21.2%;
+  margin-left: 85px;
+  position: relative;
+}
+.header_up .header_up_wrapper .input_wrapper .search {
+  width: 100%;
+  height: 38px;
+  margin: 22.5px 0;
+  background: rgba(255, 255, 255, 0);
+  border: 1px solid #ffffff;
+  padding-left: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-size: 17px;
+  letter-spacing: 0.17px;
+  font-family: 'Roboto Condensed';
+}
+.header_up .header_up_wrapper .input_wrapper .search_button {
+  background: transparent;
+  border-left: 1px solid #fff;
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  position: absolute;
+  right: 0px;
+  top: 22.5px;
+  padding: 9.5px 15px;
+  height: 38px;
+  cursor: pointer;
+}
+.header_up .header_up_wrapper .input_wrapper .search_button:active {
+  padding: 9.5px 14px 9.5px 16px;
 }
 .header_down {
   height: 100%;
@@ -105,13 +153,11 @@ header {
   float: left;
 }
 .header_down .menu .menu_list .menu_link {
-  font-family: 'Roboto Condensed';
   font-size: 17px;
   letter-spacing: 0.17px;
   color: #000000;
   text-decoration: none;
   padding: 28px 10px;
-  font-stretch: condensed;
   margin: 0 5px;
 }
 .header_down .menu .menu_list .menu_link:hover {
