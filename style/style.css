@@ -176,3 +176,61 @@ header {
   border-bottom: 1px solid #ffffff;
   background-color: #ffffff;
 }
+.xz_chto_eto {
+  display: block;
+  text-decoration: none;
+  margin: 118px auto 0 auto;
+  text-align: center;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.18px;
+  padding: 16px 0;
+  border-bottom: 2px solid #ffffff;
+  width: 6%;
+}
+.xz_chto_eto:active {
+  color: #b60965;
+  border-color: #b60965;
+}
+.header_wrapper_title {
+  margin-top: 74px;
+  margin-bottom: 74px;
+  font-family: 'Poppins';
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  text-align: center;
+  line-height: 58px;
+}
+.social_links_wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 10.157%;
+  margin: 0 auto;
+}
+.social_links:first-child {
+  background-image: url('../img/facebook_logo.png');
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+.social_links:nth-child(2) {
+  background-image: url('../img/twitter_logo.png');
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+.social_links:nth-child(3) {
+  background-image: url('../img/rss_feed.png');
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+.social_links:last-child {
+  background-image: url('../img/vk_logo.png');
+  display: block;
+  height: 40px;
+  width: 40px;
+}
