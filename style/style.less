@@ -54,12 +54,16 @@
     font-weight: @weight;
 }
 
+.padding_site(@top, @right, @bottom, @left) {
+    padding: @top @right @bottom @left;
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
 }
 
 body {
-    font-family: 'Roboto Condensed';
     height: 100%;
 }
 
@@ -335,25 +339,22 @@ header {
 
 .about-us {
     width: 100%;
-    padding: 80px 0;
     box-sizing: border-box;
     display: flex;
+    .padding_site(80px, 0, 80px, 0);
     &_content {
         width: 21.02%;
         margin-left: auto;
         &_title {
-            font-family: 'Poppins';
             color: #f44336;
-            font-size: 36px;
-            font-weight: 500;
             margin-bottom: 20px;
+            .text_style('Poppins', 36px, 500);
         }
         &_text {
             color: #999999;
-            font-size: 12px;
-            font-weight: 300;
             letter-spacing: 0.12px;
             line-height: 24px;
+            .text_style('RobotoCondensed', 12px, 300);
             &:last-child {
                 margin-top: 30px;
             }
@@ -371,17 +372,15 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     box-sizing: border-box;
-    padding: 92px 0 106px 0;
     background-color: #f7f7f7;
+    .padding_site(92px, 0, 106px, 0);
     &_title {
         width: 100%;
-        font-family: 'Poppins';
         color: #f44336;
-        font-size: 36px;
-        font-weight: 500;
         text-align: center;
         line-height: 34px;
         margin-bottom: 90px;
+        .text_style('Poppins', 36px, 500);
     }
     &_content {
         display: flex;
@@ -420,19 +419,16 @@ header {
                 margin-right: 66px;
                 &_title {
                     margin-bottom: 12px;
-                    font-family: 'Poppins';
                     color: #000000;
-                    font-size: 16px;
-                    font-weight: 500;
                     text-align: right;
+                    .text_style('Poppins', 16px, 500);
                 }
                 &_text {
                     color: #999999;
-                    font-size: 12px;
-                    font-weight: 400;
                     letter-spacing: 0.12px;
                     text-align: right;
                     line-height: 20px;
+                    .text_style('RobotoCondensed', 12px, 400);
                 }
             }
             &:hover .services_content_item_description_title {
@@ -440,6 +436,68 @@ header {
             }
             &:hover .services_content_item_img {
                 background-color: #f44336;
+            }
+        }
+    }
+}
+
+.our-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    .padding_site(80px, 0, 186px, 0);
+    &_title {
+        width: 100%;
+        color: #f44336;
+        text-align: center;
+        line-height: 48px;
+        margin-bottom: 90px;
+        .text_style('Poppins', 36px, 500);
+    }
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1171px;
+        &_item {
+            width: 271px;
+            &_photo {
+                display: block;
+            }
+            &_description {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #f7f7f7;
+                .padding_site(18px, 0, 13px, 0);
+                &_text,
+                &_text-2 {
+                    color: #000000;
+                    line-height: 20px;
+                    letter-spacing: 0.14px;
+                    text-transform: uppercase;
+                    .text_style('Poppins', 14px, 500);
+                }
+                &_text-2 {
+                    text-transform: capitalize;
+                }
+                &_button {
+                    width: 130px;
+                    line-height: 30px;
+                    margin-top: 25px;
+                    background-color: #f44336;
+                    color: #ffffff;
+                    letter-spacing: 0.14px;
+                    text-decoration: none;
+                    text-align: center;
+                    .text_style('Poppins', 14px, 500);
+                    &:hover {
+                        box-shadow: 0px 2px 5px 0px #f44336;
+                    }
+                    &:active {
+                        box-shadow: none;
+                    }
+                }
             }
         }
     }
