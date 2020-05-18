@@ -463,19 +463,26 @@ header {
             width: 271px;
             &_photo {
                 display: block;
+                &:hover {
+                    filter: brightness(35%);
+                }
             }
             &_description {
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 align-items: center;
                 background-color: #f7f7f7;
-                .padding_site(18px, 0, 13px, 0);
+                min-height: 105px;
+                .padding_site(16px, 0, 13px, 0);
                 &_text,
                 &_text-2 {
+                    width: 195px;
                     color: #000000;
                     line-height: 20px;
                     letter-spacing: 0.14px;
                     text-transform: uppercase;
+                    text-align: center;
                     .text_style('Poppins', 14px, 500);
                 }
                 &_text-2 {
@@ -484,7 +491,6 @@ header {
                 &_button {
                     width: 130px;
                     line-height: 30px;
-                    margin-top: 25px;
                     background-color: #f44336;
                     color: #ffffff;
                     letter-spacing: 0.14px;
@@ -498,6 +504,100 @@ header {
                         box-shadow: none;
                     }
                 }
+            }
+        }
+    }
+}
+
+.testimonial {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    background-image: url('../img/background_5.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 537px;
+    .padding_site(85px, 0, 98px, 0);
+    &_title {
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        line-height: 46px;
+        .text_style('Poppins', 48px, 500);
+    }
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        width: 1169px;
+        min-height: 225px;
+        &_img {
+            background-image: url('../img/marks.png');
+            background-repeat: no-repeat;
+            background-position-x: 50%;
+            display: block;
+            width: 100%;
+            height: 38px;
+        }
+        &_btn {
+            width: 37px;
+            height: 37px;
+            margin-top: 10px;
+            border: 1px solid #ffffff;
+            background-color: transparent;
+            position: relative;
+            cursor: pointer;
+            &:hover, 
+            &:nth-of-type(1):hover:after,
+            &:nth-of-type(2):hover:after {
+                border-color: #8ba3af;
+            }
+            &:nth-of-type(1):after {
+                content: "";
+                display: block;
+                width: 11px;
+                height: 11px;
+                border-bottom: 2px solid #ffffff;
+                border-left: 2px solid #ffffff;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 11.5px;
+                left: 14px;
+            }
+            &:nth-of-type(1):active:after {
+                left: 12px;
+            }
+            &:nth-of-type(2):after {
+                content: "";
+                display: block;
+                width: 11px;
+                height: 11px;
+                border-top: 2px solid #ffffff;
+                border-right: 2px solid #ffffff;
+                transform: rotate(45deg);
+                position: absolute;
+                top: 11.5px;
+                right: 14px;
+            }
+            &:nth-of-type(2):active:after {
+                right: 12px;
+            }
+        }
+        &_text-wrapper {
+            width: 935px;
+            text-align: center;
+            color: #ffffff;
+            &_item-1 {
+                width: 100%;
+                line-height: 24px;
+                margin-bottom: 30px;
+                .text_style('RobotoCondensed', 14px, 300);
+            }
+            &_item-2 {
+                width: 100%;
+                .text_style('RobotoCondensed', 16px, 400);
             }
         }
     }
