@@ -12,6 +12,12 @@
 }
 @font-face {
   font-family: 'Poppins';
+  src: url('../fonts/Poppins/Poppins-MediumItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
   src: url('../fonts/Poppins/Poppins-SemiBold.ttf');
   font-weight: 600;
   font-style: normal;
@@ -378,19 +384,46 @@ header {
 .services_content_item {
   display: flex;
 }
-.services_content_item:nth-child(2n) .services_content_item_img {
+.services_content_item:nth-child(2n) .item-img {
   margin-right: 66px;
 }
-.services_content_item:nth-child(2n) .services_content_item_description {
+.services_content_item:nth-child(2n) .item-description {
   margin-right: 0;
 }
-.services_content_item:nth-child(2n) .services_content_item_description_title {
+.services_content_item:nth-child(2n) .item-description_title {
   text-align: start;
 }
-.services_content_item:nth-child(2n) .services_content_item_description_text {
+.services_content_item:nth-child(2n) .item-description_text {
   text-align: start;
 }
-.services_content_item_img {
+.services_content_item:hover .item-description_title {
+  color: #f44336;
+}
+.services_content_item:hover .item-img {
+  background-color: #f44336;
+}
+.item-description {
+  width: 282px;
+  margin-right: 66px;
+}
+.item-description_title {
+  margin-bottom: 12px;
+  color: #000000;
+  text-align: right;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 500;
+}
+.item-description_text {
+  color: #999999;
+  letter-spacing: 0.12px;
+  text-align: right;
+  line-height: 20px;
+  font-family: 'RobotoCondensed';
+  font-size: 12px;
+  font-weight: 400;
+}
+.item-img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -400,33 +433,6 @@ header {
   background-color: #e1e1e1;
   border: 1px solid #acacac;
   box-sizing: border-box;
-}
-.services_content_item_description {
-  width: 282px;
-  margin-right: 66px;
-}
-.services_content_item_description_title {
-  margin-bottom: 12px;
-  color: #000000;
-  text-align: right;
-  font-family: 'Poppins';
-  font-size: 16px;
-  font-weight: 500;
-}
-.services_content_item_description_text {
-  color: #999999;
-  letter-spacing: 0.12px;
-  text-align: right;
-  line-height: 20px;
-  font-family: 'RobotoCondensed';
-  font-size: 12px;
-  font-weight: 400;
-}
-.services_content_item:hover .services_content_item_description_title {
-  color: #f44336;
-}
-.services_content_item:hover .services_content_item_img {
-  background-color: #f44336;
 }
 .our-gallery {
   display: flex;
@@ -451,16 +457,16 @@ header {
   justify-content: space-between;
   width: 1171px;
 }
-.our-gallery_content_item {
+.content-item {
   width: 271px;
 }
-.our-gallery_content_item_photo {
+.content-item_photo {
   display: block;
 }
-.our-gallery_content_item_photo:hover {
+.content-item_photo:hover {
   filter: brightness(35%);
 }
-.our-gallery_content_item_description {
+.content-item_description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -470,8 +476,8 @@ header {
   padding: 16px 0 13px 0;
   box-sizing: border-box;
 }
-.our-gallery_content_item_description_text,
-.our-gallery_content_item_description_text-2 {
+.content-item_description_text,
+.content-item_description_text-2 {
   width: 195px;
   color: #000000;
   line-height: 20px;
@@ -482,10 +488,10 @@ header {
   font-size: 14px;
   font-weight: 500;
 }
-.our-gallery_content_item_description_text-2 {
+.content-item_description_text-2 {
   text-transform: capitalize;
 }
-.our-gallery_content_item_description_button {
+.content-item_description_button {
   width: 130px;
   line-height: 30px;
   background-color: #f44336;
@@ -497,10 +503,10 @@ header {
   font-size: 14px;
   font-weight: 500;
 }
-.our-gallery_content_item_description_button:hover {
+.content-item_description_button:hover {
   box-shadow: 0px 2px 5px 0px #f44336;
 }
-.our-gallery_content_item_description_button:active {
+.content-item_description_button:active {
   box-shadow: none;
 }
 .testimonial {
@@ -601,5 +607,103 @@ header {
   width: 100%;
   font-family: 'RobotoCondensed';
   font-size: 16px;
+  font-weight: 700;
+}
+.testimonial_content_text-wrapper_item-3 {
+  font-family: 'RobotoCondensed';
+  font-size: 16px;
+  font-weight: 300;
+}
+.news-events {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 97px 0 96px 0;
+  box-sizing: border-box;
+}
+.news-events_title {
+  width: 100%;
+  margin-bottom: 94px;
+  color: #f44336;
+  line-height: 48px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 36px;
+  font-weight: 500;
+}
+.news-events_content {
+  display: flex;
+  justify-content: space-between;
+  width: 1156px;
+}
+.content-left {
+  display: flex;
+  flex-direction: column;
+}
+.content-left_title {
+  color: #000000;
+  line-height: 24px;
+  margin-bottom: 32px;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 500;
+}
+.content-left_item {
+  display: flex;
+  justify-content: space-between;
+  width: 473px;
+  margin-bottom: 49px;
+  margin-left: 21px;
+}
+.content-left_item:last-child {
+  margin-bottom: 0;
+}
+.content-left_item_date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 98px;
+  height: 139px;
+  border-radius: 49px;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  background-color: #f7f7f7;
+}
+.content-left_item_date_day {
+  color: #000000;
+  line-height: 38px;
+  font-family: 'Poppins';
+  font-size: 32px;
+  font-weight: 500;
+}
+.content-left_item_date_month {
+  color: #9e9e9e;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 500;
+}
+.content-left_item_date_year {
+  color: #9e9e9e;
+  font-style: italic;
+  font-family: 'Poppins';
+  font-size: 13px;
   font-weight: 400;
+}
+.content-left_item_description {
+  width: 308px;
+}
+.content-left_item_description_title {
+  color: #f44336;
+  margin: 24px 0 18px 0;
+  font-family: 'RobotoCondensed';
+  font-size: 16px;
+  font-weight: 400;
+}
+.content-left_item_description_text {
+  color: #9e9e9e;
+  line-height: 24px;
+  font-family: 'RobotoCondensed';
+  font-size: 14px;
+  font-weight: 300;
 }
