@@ -872,6 +872,9 @@ header {
 .social_link_icon:hover {
   background-color: #8ba3af;
 }
+.social_link_icon:active {
+  background-color: transparent;
+}
 .subscribe {
   display: flex;
   flex-wrap: wrap;
