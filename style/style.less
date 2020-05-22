@@ -626,7 +626,7 @@ header {
         width: 100%;
         margin-bottom: 94px;
         color: #f44336;
-        line-height: 48px;
+        line-height: 30px;
         text-align: center;
         .text_style('Poppins', 36px, 500);
     }
@@ -796,5 +796,76 @@ header {
                 font-size: 20px;
             }
         }
+    }
+}
+
+.our-team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f7f7f7;
+    .padding_site(98px, 0, 79px, 0);
+    &_title {
+        width: 100%;
+        color: #f44336;
+        margin-bottom: 61px;
+        line-height: 30px;
+        text-align: center;
+        .text_style('Poppins', 36px, 600); 
+    }
+    &_content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 1171px;
+        &_item {
+            width: 270px;
+            &_img {
+                display: block;
+            }
+            &_title {
+                color: #f44336;
+                line-height: 30px;
+                margin-top: 22px;
+                .text_style('Poppins', 24px, 500); 
+            }
+            &_position {
+                display: block;
+                color: #838383;
+                margin-top: 2px;
+                .text_style('RobotoCondensed', 16px, 300);
+            }
+            &_social {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 14px;
+                width: 171px;
+            }
+        }
+    }
+}
+
+.social_link {
+    &_icon {
+        display: block;
+        &:hover {
+            background-color: #8ba3af;
+        }
+    }
+}
+
+.subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-image: url('../img/background_8.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    .padding_site(86px, 0, 80px, 0);
+    &_title {
+        color: #ffffff;
+        line-height: 46px;
+        margin-bottom: 50px;
+        .text_style('Poppins', 48px, 500); 
     }
 }
