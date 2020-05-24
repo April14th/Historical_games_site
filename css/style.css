@@ -933,3 +933,24 @@ header {
 .subscribe_form_btn:active {
   box-shadow: none;
 }
+.contact-us {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  padding: 95px 0 90px 0;
+  box-sizing: border-box;
+}
+.contact-us_title {
+  color: #f44336;
+  line-height: 30px;
+  margin-bottom: 87px;
+  text-align: center;
+  font-family: 'Poppins';
+  font-size: 36px;
+  font-weight: 600;
+}
+.contact-us_content {
+  display: flex;
+  width: 971px;
+}
