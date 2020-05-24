@@ -912,7 +912,7 @@ header {
 .subscribe_form_input {
   background-color: #ffffff;
   border: none;
-  color: #000000;
+  color: #8e8e8e;
   line-height: 55px;
   width: 499px;
   outline: none;
@@ -924,10 +924,6 @@ header {
 }
 .subscribe_form_input:hover {
   box-shadow: 0px 2px 5px 0px #ffffff;
-}
-.subscribe_form_input::-webkit-input-placeholder,
-.subscribe_form_input::-moz-placeholder {
-  color: #8e8e8e;
 }
 .subscribe_form_btn {
   background-color: #f44336;
@@ -966,5 +962,92 @@ header {
 }
 .contact-us_content {
   display: flex;
+  justify-content: space-between;
   width: 971px;
+}
+.contact-us_content_left {
+  width: 386px;
+}
+.contact-us_content_left_title {
+  color: #f44336;
+  line-height: 26px;
+  margin-bottom: 13px;
+  font-family: 'RobotoCondensed';
+  font-size: 26px;
+  font-weight: 400;
+}
+.contact-us_content_left_text {
+  display: block;
+  margin-top: 16px;
+  color: #9e9e9e;
+  font-family: 'RobotoCondensed';
+  font-size: 14px;
+  font-weight: 300;
+}
+.contact-us_content_left_text:nth-child(2) {
+  margin-top: 0;
+}
+.contact-us_content_left_text:nth-child(3) {
+  width: 170px;
+}
+.contact-us_content_left_link {
+  color: #f44336;
+  text-decoration: none;
+}
+.contact-us_content_left_link:hover {
+  text-decoration: underline;
+}
+.contact-us_content_left_link:active {
+  text-decoration: none;
+}
+.contact-us_content_right {
+  display: flex;
+  flex-direction: column;
+  width: 470px;
+}
+.contact-us_content_right_input,
+.contact-us_content_right_textarea {
+  width: 100%;
+  color: #838383;
+  border: 1px solid #999999;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'RobotoCondensed';
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact-us_content_right_input {
+  margin-bottom: 21px;
+  padding: 0 16px;
+  line-height: 42px;
+  text-transform: capitalize;
+}
+.contact-us_content_right_input:hover {
+  box-shadow: 0px 2px 5px 0px #999999;
+}
+.contact-us_content_right_textarea {
+  margin-bottom: 19px;
+  padding: 13px 16px;
+  resize: none;
+  max-height: 168px;
+}
+.contact-us_content_right_textarea:hover {
+  box-shadow: 0px 2px 5px 0px #999999;
+}
+.contact-us_content_right_btn {
+  width: 140px;
+  line-height: 40px;
+  background-color: #f44336;
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+  font-family: 'RobotoCondensed';
+  font-size: 14px;
+  font-weight: 400;
+}
+.contact-us_content_right_btn:hover {
+  box-shadow: 0px 2px 5px 0px #f44336;
+}
+.contact-us_content_right_btn:active {
+  box-shadow: none;
 }

@@ -889,7 +889,7 @@ header {
         &_input {
             background-color: #ffffff;
             border: none;
-            color: #000000;
+            color: #8e8e8e;
             line-height: 55px;
             width: 499px;
             outline: none;
@@ -897,10 +897,6 @@ header {
             .padding_site(0, 30px, 0, 30px);
             &:hover {
                 box-shadow: 0px 2px 5px 0px #ffffff;
-            }
-            &::-webkit-input-placeholder,
-            &::-moz-placeholder {
-                color: #8e8e8e;
             }
         }
         &_btn {
@@ -937,6 +933,85 @@ header {
     }
     &_content {
         display: flex;
+        justify-content: space-between;
         width: 971px;
+        &_left {
+            width: 386px;
+            &_title {
+                color: #f44336;
+                line-height: 26px;
+                margin-bottom: 13px;
+                .text_style('RobotoCondensed', 26px, 400);
+            }
+            &_text {
+                display: block;
+                margin-top: 16px;
+                color: #9e9e9e;
+                .text_style('RobotoCondensed', 14px, 300);
+                &:nth-child(2) {
+                    margin-top: 0;
+                }
+                &:nth-child(3) {
+                    width: 170px;
+                }
+            }
+            &_link {
+                color: #f44336;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:active {
+                    text-decoration: none;
+                }
+            }
+        }
+        &_right {
+            display: flex;
+            flex-direction: column;
+            width: 470px;
+            &_input,
+            &_textarea {
+                width: 100%;
+                color: #838383;
+                border: 1px solid #999999;
+                box-sizing: border-box;
+                outline: none;
+                .text_style('RobotoCondensed', 14px, 400);
+            }
+            &_input {
+                margin-bottom: 21px;
+                padding: 0 16px;
+                line-height: 42px;
+                text-transform: capitalize;
+                &:hover {
+                    box-shadow: 0px 2px 5px 0px #999999;
+                }
+            }
+            &_textarea {
+                margin-bottom: 19px;
+                padding: 13px 16px;
+                resize: none;
+                max-height: 168px;
+                &:hover {
+                    box-shadow: 0px 2px 5px 0px #999999;
+                }
+            }
+            &_btn {
+                width: 140px;
+                line-height: 40px;
+                background-color: #f44336;
+                color: #ffffff;
+                text-transform: uppercase;
+                border: none;
+                .text_style('RobotoCondensed', 14px, 400);
+                &:hover {
+                    box-shadow: 0px 2px 5px 0px #f44336;
+                }
+                &:active {
+                    box-shadow: none;
+                }
+            } 
+        }
     }
 }
