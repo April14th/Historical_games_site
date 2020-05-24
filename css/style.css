@@ -193,6 +193,7 @@ header {
   box-sizing: border-box;
   color: #ffffff;
   letter-spacing: 0.17px;
+  outline: none;
   font-family: 'RobotoCondensed';
   font-size: 17px;
   font-weight: 400;
@@ -208,6 +209,7 @@ header {
   top: 22.5px;
   padding: 9.5px 15px;
   height: 38px;
+  outline: none;
   cursor: pointer;
 }
 .header-up_content_search_button_img {
@@ -553,6 +555,7 @@ header {
   border: 1px solid #ffffff;
   background-color: transparent;
   position: relative;
+  outline: none;
   cursor: pointer;
 }
 .testimonial_content_btn:hover,
@@ -739,6 +742,7 @@ header {
   background-repeat: no-repeat;
   background-color: transparent;
   position: relative;
+  outline: none;
   cursor: pointer;
 }
 .content-right_title_switch-btns_item:nth-of-type(1) {
@@ -792,6 +796,7 @@ header {
   color: #000000;
   line-height: 38px;
   padding-left: 34px;
+  outline: none;
   cursor: pointer;
   font-family: 'RobotoCondensed';
   font-size: 16px;
@@ -813,6 +818,9 @@ header {
   position: absolute;
   left: 14px;
   font-size: 20px;
+}
+.content-right_list_item::-webkit-details-marker {
+  display: none;
 }
 .our-team {
   display: flex;
@@ -904,9 +912,10 @@ header {
 .subscribe_form_input {
   background-color: #ffffff;
   border: none;
-  color: #8e8e8e;
+  color: #000000;
   line-height: 55px;
   width: 499px;
+  outline: none;
   font-family: 'RobotoCondensed';
   font-size: 14px;
   font-weight: 300;
@@ -916,12 +925,17 @@ header {
 .subscribe_form_input:hover {
   box-shadow: 0px 2px 5px 0px #ffffff;
 }
+.subscribe_form_input::-webkit-input-placeholder,
+.subscribe_form_input::-moz-placeholder {
+  color: #8e8e8e;
+}
 .subscribe_form_btn {
   background-color: #f44336;
   border: none;
   color: #ffffff;
   line-height: 55px;
   width: 119px;
+  outline: none;
   cursor: pointer;
   font-family: 'RobotoCondensed';
   font-size: 14px;
