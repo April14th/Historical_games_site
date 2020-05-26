@@ -359,7 +359,7 @@ body {
     justify-content: center;
     box-sizing: border-box;
     background-color: #f7f7f7;
-    .padding_site(4.835%, 0, 5.571%, 0);
+    .padding_site(92px, 0, 106px, 0);
     &_title {
         width: 100%;
         color: #f44336;
@@ -433,7 +433,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    .padding_site(4.204%, 0, 9.7741%, 0);
+    .padding_site(84px, 0, 186px, 0);
     &_title {
         width: 100%;
         color: #f44336;
@@ -1004,6 +1004,9 @@ body {
         margin-bottom: 25px;
         .text_style('Poppins', 36px, 600); 
     }
+    &_map {
+        width: 1170px;
+    }
 }
 
 .footer-main {
@@ -1024,26 +1027,78 @@ body {
     }
 
     .services {
-        padding: 4.835% 15px 5.571% 15px;
+        padding: 7.077% 15px 8.154% 15px;
         &_title {
             margin-bottom: 7.087%;
         }
     }
 
-    .our-gallery_title {
-        margin-bottom: 6.924%;
+    .our-gallery {
+        padding: 6.462% 0 14.308% 0;
+        &_title {
+            margin-bottom: 6.924%;
+        }
+        &_content {
+            width: 571px;
+            &_item:nth-child(1),
+            &_item:nth-child(2) {
+                margin-bottom: 29px;
+            }
+        }
     }
 
-    .our-gallery_content {
-        justify-content: center;
-        width: 571px;
-        &_item:nth-child(1),
-        &_item:nth-child(3) {
-            margin-right: 29px;
+    .testimonial_content {
+        width: 90%;
+        &_text-wrapper {
+            width: 80%;
         }
-        &_item:nth-child(1),
-        &_item:nth-child(2) {
-            margin-bottom: 29px;
+    }
+    
+    .news-events {
+        padding: 7.462% 0 7.385% 0;
+        &_title {
+            margin-bottom: 7.231%;
+        }
+        &_content {
+            justify-content: unset;
+            width: unset;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+    .content-left {
+        margin-bottom: 50px;
+    }
+    
+    .our-team {
+        padding: 7.539% 0 6.077% 0;
+        &_title {
+            margin-bottom: 4.693%;
+        }
+        &_content {
+            width: 570px;
+            &_item:nth-child(1),
+            &_item:nth-child(2) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+    
+    .contact-us {
+        padding: 7.308% 0 6.77% 0;
+        &_title {
+            margin-bottom: 6.693%;
+        }
+        &_content {
+            width: 920px;
+        }
+    }
+
+    .route-map {
+        padding: 0 0 6.924% 0;
+        &_map {
+            width: 90%;
         }
     }
 }
