@@ -126,18 +126,18 @@ body {
                 line-height: 16px;
                 .text_style('Poppins', 15px, 500);
             }
-        }
-        &:hover .header-up_content_logo_link-1 {
-            color: #8ba3af;
-        }
-        &:hover .header-up_content_logo_link-2 {
-            color: #8ba3af;
-        }
-        &:active .header-up_content_logo_link-1 {
-            color: #ffffff;
-        }
-        &:active .header-up_content_logo_link-2 {
-            color: #ffffff;
+            &:hover .header-up_content_logo_link-1 {
+                color: #8ba3af;
+            }
+            &:hover .header-up_content_logo_link-2 {
+                color: #8ba3af;
+            }
+            &:active .header-up_content_logo_link-1 {
+                color: #ffffff;
+            }
+            &:active .header-up_content_logo_link-2 {
+                color: #ffffff;
+            }
         }
         &_contacts {
             display: flex;
@@ -1099,6 +1099,34 @@ body {
         padding: 0 0 6.924% 0;
         &_map {
             width: 90%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .header-up {
+        height: 140px;
+    }
+
+    .header-up_content {
+        width: 650px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        &_logo {
+            margin: 0 36.77%;
+        }
+        &_contacts {
+            margin-left: 0;
+        }
+        &_email {
+            margin-left: 0; 
+        }
+        &_search {
+            margin-left: 0;
+            &_input {
+                width: 127px;
+                box-sizing: unset;
+            }
         }
     }
 }
