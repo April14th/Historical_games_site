@@ -219,6 +219,68 @@ body {
     }
 }
 
+.mobile-menu_label,
+.mobile-menu_checkbox {
+    display: none;
+}
+
+.mobile-menu_label_icon {
+    display: block;
+    width: 40px;
+    height: 5px;
+    background-color: #ffffff;
+    position: relative;
+    transition: .4s;
+    &:before {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        top: -10px;
+        transition: .4s;
+    }
+    &:after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 5px;
+        background-color: #ffffff;
+        position: absolute;
+        top: 10px;
+        transition: .4s;
+    }
+}
+
+.mobile-menu_checkbox:checked ~ .header-down {
+    height: 400px;
+    transition: 1s;
+}
+
+.mobile-menu_checkbox:checked ~ .header-down .header-down_menu {
+    visibility: visible;
+    transition: .2s;
+    transition-delay: .2s;
+}
+
+.mobile-menu_checkbox:checked ~ .mobile-menu_label .mobile-menu_label_icon {
+    transition: .4s;
+    background: transparent;
+    &:before,
+    &:after {
+        top: 0;
+    }
+    &:before {
+        transition: .4s;
+        transform: rotate(45deg);
+    }
+    &:after {
+        transition: .4s;
+        transform: rotate(-45deg);
+    }
+}
+
 .header-down {
     display: flex;
     flex-direction: column;
@@ -1169,5 +1231,71 @@ body {
             order: 1;
             margin-bottom: 40px;
         }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .header-img {
+        min-height: unset;
+        background-size: unset;
+    }
+
+    .header-main {
+        position: relative;
+        padding-bottom: 13px;
+    }
+
+    .header-up {
+        justify-content: flex-start;
+        height: 83px;
+        &_content {
+            width: unset;
+            margin-left: 60px;
+            &_logo {
+                margin: 0;
+            }
+            &_contacts,
+            &_email,
+            &_search {
+                display: none;
+            }
+        }
+    }
+
+    .mobile-menu_label {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 28px;
+        position: absolute;
+        top: 40.5px;
+        right: 50px;
+        cursor: pointer;
+    }
+
+    .header-down {
+        height: 0;
+        &_menu {
+            visibility: hidden;
+            margin: 0;
+            &_list-active:after {
+                display: none;
+            }
+            &_list {
+                line-height: 50px;
+                float: none;
+                &_link {
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .header-down_line,
+    .xz-chto-eto, 
+    .header-wrapper_title, 
+    .social-links {
+        display: none;
     }
 }
