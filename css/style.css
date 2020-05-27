@@ -307,7 +307,6 @@ body {
   background-image: url('../img/vk_logo.png');
 }
 .about-us {
-  width: 100%;
   display: flex;
   padding: 4.204% 0 4.204% 0;
   box-sizing: border-box;
@@ -339,7 +338,6 @@ body {
   margin-left: 33px;
 }
 .services {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -1161,5 +1159,44 @@ body {
   .header-up_content_search_input {
     width: 127px;
     box-sizing: unset;
+  }
+  .about-us {
+    display: flex;
+    justify-content: center;
+    background-image: url('../img/about_us.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .about-us_content {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .about-us_content_title {
+    text-align: center;
+  }
+  .about-us_content_text {
+    text-align: justify;
+    color: #ffffff;
+    font-weight: 600;
+  }
+  .about-us_img {
+    display: none;
+  }
+  .services_content {
+    justify-content: center;
+    width: 450px;
+    min-height: 927px;
+  }
+  .contact-us_content {
+    flex-wrap: wrap;
+    width: 470px;
+  }
+  .contact-us_content_left {
+    order: 2;
+  }
+  .contact-us_content_right {
+    order: 1;
+    margin-bottom: 40px;
   }
 }

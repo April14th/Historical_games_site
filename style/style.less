@@ -324,7 +324,6 @@ body {
 }
 
 .about-us {
-    width: 100%;
     box-sizing: border-box;
     display: flex;
     .padding_site(4.204%, 0, 4.204%, 0);
@@ -353,7 +352,6 @@ body {
 }
 
 .services {
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -1128,6 +1126,48 @@ body {
                 width: 127px;
                 box-sizing: unset;
             }
+        }
+    }
+
+    .about-us {
+        display: flex;
+        justify-content: center;
+        background-image: url('../img/about_us.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        &_content {
+            display: flex;
+            flex-direction: column;
+            margin-left: 0;
+            &_title {
+                text-align: center;
+            }
+            &_text {
+                text-align: justify;
+                color: #ffffff;
+                font-weight: 600;
+            }
+        }
+        &_img {
+            display: none;
+        } 
+    }
+
+    .services_content {
+        justify-content: center;
+        width: 450px;
+        min-height: 927px;
+    }
+
+    .contact-us_content {
+        flex-wrap: wrap;
+        width: 470px;
+        &_left {
+            order: 2;
+        }
+        &_right {
+            order: 1;
+            margin-bottom: 40px;
         }
     }
 }
