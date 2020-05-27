@@ -1023,6 +1023,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   border: none;
+  outline: none;
   font-family: 'RobotoCondensed';
   font-size: 14px;
   font-weight: 400;
