@@ -254,14 +254,15 @@ body {
 }
 
 .mobile-menu_checkbox:checked ~ .header-down {
-    height: 400px;
-    transition: 1s;
+    height: 350px;
+    transition: 0.8s;
 }
 
 .mobile-menu_checkbox:checked ~ .header-down .header-down_menu {
     visibility: visible;
-    transition: .2s;
-    transition-delay: .2s;
+    opacity: 1;
+    transition: .4s;
+    transition-delay: .5s;
 }
 
 .mobile-menu_checkbox:checked ~ .mobile-menu_label .mobile-menu_label_icon {
@@ -1275,9 +1276,12 @@ body {
 
     .header-down {
         height: 0;
+        transition: 1s;
         &_menu {
             visibility: hidden;
             margin: 0;
+            opacity: 0;
+            transition: .1s;
             &_list-active:after {
                 display: none;
             }
@@ -1297,5 +1301,61 @@ body {
     .header-wrapper_title, 
     .social-links {
         display: none;
+    }
+
+    .our-gallery_content {
+        width: 271px;
+        &_item:nth-child(3) {
+            margin-bottom: 29px;
+        }
+    }
+
+    .content-left_item {
+        width: 430px;
+        margin-bottom: 45px;
+        margin-left: 20px;
+    }
+
+    .content-right {
+        width: 430px;
+        &_img {
+            flex-wrap: wrap;
+            justify-content: center;
+            &_item:nth-child(1) {
+                margin-right: 15px;
+            }
+            &_item:nth-child(3) {
+                margin-top: 15px;
+            } 
+        }
+    }
+
+    .our-team_content {
+        width: 270px;
+        &_item {
+            margin-bottom: 30px;
+        }
+    }
+
+    .subscribe_title {
+        line-height: 42px;
+        margin-bottom: 6.4%;
+        font-size: 46px;
+    }
+
+    .subscribe_form {
+        flex-wrap: wrap;
+        width: 450px;
+        justify-content: center;
+        &_input {
+            width: 100%;
+        }
+        &_btn {
+            margin-top: 25px;
+        }
+    }
+
+    .contact-us_content {
+        width: 450px;
     }
 }

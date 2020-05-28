@@ -233,13 +233,14 @@ body {
   transition: 0.4s;
 }
 .mobile-menu_checkbox:checked ~ .header-down {
-  height: 400px;
-  transition: 1s;
+  height: 350px;
+  transition: 0.8s;
 }
 .mobile-menu_checkbox:checked ~ .header-down .header-down_menu {
   visibility: visible;
-  transition: 0.2s;
-  transition-delay: 0.2s;
+  opacity: 1;
+  transition: 0.4s;
+  transition-delay: 0.5s;
 }
 .mobile-menu_checkbox:checked ~ .mobile-menu_label .mobile-menu_label_icon {
   transition: 0.4s;
@@ -1294,10 +1295,13 @@ body {
   }
   .header-down {
     height: 0;
+    transition: 1s;
   }
   .header-down_menu {
     visibility: hidden;
     margin: 0;
+    opacity: 0;
+    transition: 0.1s;
   }
   .header-down_menu_list-active:after {
     display: none;
@@ -1315,5 +1319,54 @@ body {
   .header-wrapper_title,
   .social-links {
     display: none;
+  }
+  .our-gallery_content {
+    width: 271px;
+  }
+  .our-gallery_content_item:nth-child(3) {
+    margin-bottom: 29px;
+  }
+  .content-left_item {
+    width: 430px;
+    margin-bottom: 45px;
+    margin-left: 20px;
+  }
+  .content-right {
+    width: 430px;
+  }
+  .content-right_img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .content-right_img_item:nth-child(1) {
+    margin-right: 15px;
+  }
+  .content-right_img_item:nth-child(3) {
+    margin-top: 15px;
+  }
+  .our-team_content {
+    width: 270px;
+  }
+  .our-team_content_item {
+    margin-bottom: 30px;
+  }
+  .subscribe_title {
+    line-height: 42px;
+    margin-bottom: 6.4%;
+    font-size: 46px;
+  }
+  .subscribe_form {
+    flex-wrap: wrap;
+    width: 450px;
+    justify-content: center;
+  }
+  .subscribe_form_input {
+    width: 100%;
+  }
+  .subscribe_form_btn {
+    margin-top: 25px;
+  }
+  .contact-us_content {
+    width: 450px;
   }
 }
