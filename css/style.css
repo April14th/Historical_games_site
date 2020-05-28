@@ -355,6 +355,12 @@
 .social-links_item:last-child {
   background-image: url('../img/vk_logo.png');
 }
+.social-links_item:hover {
+  transform: scale(1.1);
+}
+.social-links_item:active {
+  transform: scale(1);
+}
 .about-us {
   display: flex;
   padding: 4.204% 0 4.204% 0;
