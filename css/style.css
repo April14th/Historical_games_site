@@ -44,12 +44,6 @@
   margin: 0;
   padding: 0;
 }
-html {
-  height: 100%;
-}
-body {
-  height: 100%;
-}
 .container {
   margin: 0 auto;
   max-width: 1920px;
@@ -64,9 +58,6 @@ body {
 .header-main {
   width: 100%;
   padding-top: 13px;
-}
-.header-wrapper {
-  width: 100%;
 }
 .header-up {
   display: flex;
